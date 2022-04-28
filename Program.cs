@@ -1,7 +1,4 @@
-﻿using System.IO;
-using System.Text.RegularExpressions;
-using System.Data;
-using Internal;
+﻿
 using System;
 public class phuongtrinhbac2
 {
@@ -38,16 +35,21 @@ public class phuongtrinhbac2
             Console.WriteLine("Phuong trinh vo nghiem");
         }else{
             if(d==0){
-                double x=-b/2*a_168;
+                double x=-b_168/2*a_168;
                 Console.WriteLine("phuong trinh co nghiem x= {0}",x);
             }else{
-                double x1=(-b+Math.sqrt(d))/2*a_168;
-                double x2 = (-b-Math.sqrt(d))/2*a_168;
+                double x1=(-b_168+Math.Sqrt(d))/2*a_168;
+                double x2 = (-b_168-Math.Sqrt(d))/2*a_168;
+                Console.WriteLine("phuong trinh co nghiem x1= {0}",x1);
+                Console.WriteLine("phuong trinh co nghiem x2= {0}",x2);
             }
         }
     }
     public static void Main(string[] args)
     {
-        
+        Console.WriteLine("Nhap a");
+
+        phuongtrinhbac2 ptb2 = new phuongtrinhbac2(1,1,-2);
+        ptb2.tinhnghiem();
     }
 }
