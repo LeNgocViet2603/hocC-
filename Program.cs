@@ -47,8 +47,6 @@ public class phuongtrinhbac2
     }
     public static void Main(string[] args)
     {
-        Console.WriteLine("Nhap a");
-
         phuongtrinhbac2 ptb2 = new phuongtrinhbac2(1,1,-2);
         ptb2.tinhnghiem();
     }
